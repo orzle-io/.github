@@ -6,8 +6,6 @@ import Layout from "../layouts/base.astro";
   <section
   class="
     flex flex-col
-    justify-between
-    items-end
     gap-4
     md:flex-row
     h-[75vh]
@@ -16,11 +14,12 @@ import Layout from "../layouts/base.astro";
     max-w-screen-xl
   "
 >
-  <div class="py-8 px-4 lg:py-16 lg:px-12">
+  <div class="py-8 px-4 lg:py-16 lg:px-12 md:w-1/2">
     <h1
       class="
         mb-4
-        text-4xl
+        text-2xl
+        sm:text-3xl
         font-extrabold
         tracking-tight
         leading-none
@@ -28,19 +27,29 @@ import Layout from "../layouts/base.astro";
         md:text-5xl
       "
     >
-      Building digital products for
-      <span class="text-primary-600"><i>brands</i></span>
+      Crafting modern digital solutions for
+      <span class="text-primary-600"><i>brands that stand out</i></span>
+      in the crowd.
     </h1>
-    <p class="mb-8 text-lg text-gray-500 lg:text-xl">
-      We're an IT company handling projects since 2018. For Smarter Future
-      Aspect With The Help Of Best Minds, Tools & Technology In The
-      Industry.
+    <p class="mb-8 text-gray-500 lg:text-lg">
+      At ORZLE, we are creating a smarter future with smarter IT
+      solutions. We believe in the power of technology to
+      innovate & inspire. Join us in our mission for a better
+      tomorrow!
     </p>
+
+    <p class="mb-8 text-gray-500 lg:text-lg">
+      <span class="text-primary-600">#OrzleTechnology</span>
+      <span class="text-primary-600">#InnovativeTechnology</span>
+      <span class="text-primary-600">#SmarterSolutions</span><br>
+      The state-of-the-art IT solutions we provide can help businesses stand out in a competitive market. Web development, software development, app development and advancements, digital marketing, branding & graphic design are among our digital services that ensure your business stands out. Our goal is to create a personalized experience for your customers by providing the best-in-class service.
+          </p>
+
     <div class="flex flex-col mb-8 lg:mb-16 sm:flex-row sm:space-y-0">
       <a
         href="#"
         class="
-          inline-flex
+          inline-flex hidden
           justify-center
           items-center
           py-3
@@ -71,18 +80,18 @@ import Layout from "../layouts/base.astro";
     </div>
   </div>
 
-  <div class="w-full h-full bg-white flex items-center sm:justify-end">
-    <img src="mobile-app.svg" alt="mobile" />
+  <div class="relative w-full h-auto md:w-1/2 bg-white flex items-center sm:justify-end">
+    <img class="object-cover" src="mobile-app.svg" alt="mobile" />
   </div>
 </section>
 
-<footer class="p-4 bg-white sm:p-6">
+<footer class="relative p-4 bg-white sm:p-6">
   <div class="mx-auto max-w-6xl">
     <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
     <div class="sm:flex sm:items-center sm:justify-between">
       <span class="text-sm text-gray-500 sm:text-center">
         © 2022
-        <a href="https://orzle.io" class="hover:underline">Orzle</a> | All
+        <a href="https://orzle.io" class="text-gray-800 hover:underline">Orzle</a> | All
         Rights Reserved.
       </span>
       <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
